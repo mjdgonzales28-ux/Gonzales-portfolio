@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, contact, and resume." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Your Name<span class="muted"> — Designer / Developer</span></a>
+
+      <!-- NAV TOGGLE for small screens -->
+      <button class="nav-toggle" id="navToggle" aria-controls="siteNav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="siteNav" class="site-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="assets/YourName_Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="home" class="container" role="main">
+    <!-- HERO / INTRO -->
+    <section class="hero" id="about" aria-labelledby="about-heading">
+      <div class="hero-left">
+        <h1 id="about-heading">Hi — I'm <span class="accent">Your Name</span></h1>
+        <p class="lead">I design and build responsive, accessible websites that solve user problems. I focus on clarity, performance, and delightful interaction.</p>
+        <p class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </p>
+      </div>
+      <figure class="hero-photo" aria-hidden="false">
+        <img src="assets/images/profile.jpg" alt="Portrait photo of Your Name" width="300" height="300">
+        <figcaption class="visually-hidden">Profile photo</figcaption>
+      </figure>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="grid-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected Projects</h2>
+
+      <div class="projects-grid">
+        <article class="card">
+          <img src="assets/images/project1.jpg" alt="Screenshot of Project One" />
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p>Short summary — problem solved, tools used, outcome.</p>
+            <p class="small">HTML • CSS • JavaScript</p>
+            <p><a href="#" class="link">View repo</a> • <a href="#" class="link">Live demo</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/project2.jpg" alt="Screenshot of Project Two" />
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p>Short summary — problem solved, tools used, outcome.</p>
+            <p class="small">React • API • UX</p>
+            <p><a href="#" class="link">View repo</a> • <a href="#" class="link">Live demo</a></p>
+          </div>
+        </article>
+
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <!-- SKILLS / UI/UX Checklist -->
+    <section id="skills" class="stack" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills & UI/UX Applied</h2>
+      <ul class="skill-list">
+        <li>Responsive design (mobile-first breakpoints)</li>
+        <li>Accessible HTML (semantic elements, alt text)</li>
+        <li>Visual hierarchy & typographic scale</li>
+        <li>Simple navigation & clear CTAs</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Interested in working together? Fill out the form or email me directly.</p>
+      <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" required type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" required type="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p class="contact-meta">Or email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Your Name. Built with care — accessible and responsive.</p>
+      <nav aria-label="Social links">
+        <ul class="social">
+          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+    
